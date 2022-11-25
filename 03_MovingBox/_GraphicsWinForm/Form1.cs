@@ -62,11 +62,18 @@ namespace _GraphicsWinForm
                             Clied = true;
                             velocityX = (int)(velocityX * 1.5);
                             velocityY = (int)(velocityY * 1.5);
+
+                            Random rnd = new Random();
+
+                            c1 = Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255));
+                            c2 = Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255));
                         }
                         if (level == 5)
                         {
                             MessageBox.Show("Nyertél!");
                         }
+
+                        
                     }
                     break;
                 case MouseButtons.Right:
