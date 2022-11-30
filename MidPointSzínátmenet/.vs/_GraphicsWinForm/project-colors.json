@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "aad63873-00a3-4ead-8a43-452eb9d4c4e7": {
+      "ProjectGuid": "aad63873-00a3-4ead-8a43-452eb9d4c4e7",
+      "DisplayName": "_GraphicsWinForm",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

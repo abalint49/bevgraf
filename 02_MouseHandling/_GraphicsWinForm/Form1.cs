@@ -33,10 +33,22 @@ namespace _GraphicsWinForm
 
         private void canvas_Paint(object sender, PaintEventArgs e)
         {
+
             g = e.Graphics;
 
-            g.FillRectangle(brush, upperLeft.X, upperLeft.Y, size, size);
-            //g.FillRectangle(new Rectangle())
+            //g.FillRectangle(brush, upperLeft.X, upperLeft.Y, size, size);
+
+            for (int i = 0; i < size; i++)
+            {
+                float posx = (upperLeft.X + i) / canvas.Width;
+
+                int R1 = (int)(c1.R * posx + c2.R * (1 - posx));
+                int G1 = (int)(c1.G * posx + c2.G * (1 - posx));
+                int B1 = (int)(c1.B * posx + c2.B * (1 - posx));
+
+                Color c = Color.FromArgb(R1, G1, B1);
+                g.DrawLine(new Pen(c), upperLeft.X+i, upperLeft.Y, upperLeft.X+i, upperLeft.Y + size);
+            }
         }
 
         private void canvas_MouseDown(object sender, MouseEventArgs e)
